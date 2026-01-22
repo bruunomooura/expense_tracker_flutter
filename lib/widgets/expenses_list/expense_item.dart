@@ -18,9 +18,11 @@ class ExpenseItem extends StatelessWidget {
           horizontal: 16,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               expense.title,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
             SizedBox(height: 4),
             Row(
